@@ -2,7 +2,7 @@
 
 const API_BASE_URL = 'https://api.openai.com/v1';
 const GPT_MODEL = 'gpt-3.5-turbo';
-// const API_KEY = '';
+const API_KEY = '';
 
 
 
@@ -39,8 +39,14 @@ genreButtons.forEach(function (button) {
         // nascondo i bottoni dei generi
         genres.classList.add('hidden');
 
-        // start game
-        startGame();
+        if (API_KEY != '') {
+            // start game
+            startGame();
+        } else {
+            alert('API KEY NOT DEFINED : YOU HAVE TO REGISTER A VALID API KEY TO USE THIS APP.');
+        }
+
+
     })
 });
 
