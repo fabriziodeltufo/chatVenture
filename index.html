@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT VENTURE</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <h1>ChatVenture</h1>
+        <p>Ciao GIOCATORE, benvenuto nel gioco testuale con la storia inventata da chatGPT :-)</p>
+    </header>
+
+    <!-- main content -->
+    <main class="container">
+
+        <!-- GENRE CHOICE -->
+        <div class="genres">
+            <div class="genre" data-genre="horror">👻</div>
+            <div class="genre" data-genre="spy story">🕵️</div>
+            <div class="genre" data-genre="marvel superheros">🦸</div>
+        </div>
+
+
+        <!-- LOADER -->
+        <div class="loader hidden">
+
+            <img src="./images/loader.gif" alt="loader">
+        </div>
+
+
+        <!-- PLACEHOLDER -->
+        <div id="placeholder"></div>
+
+
+        <!-- GAME OVER -->
+        <template id="gameover-template">
+            <div class="gameover">
+                <div class="gameover-icon">☠️</div>
+                <h2>Sei Morto</h2>
+                <p class="gameover-message">Lorem ipsum dolor sit amet.</p>
+                <button>Rigioca</button>
+            </div>
+        </template>
+
+
+        <!-- STAGE TEMPLATE -->
+        <template id="stage-template">
+            <div class="stage">
+                <div class="stage-picture">
+                    <!-- <img src="https://picsum.photos/seed/random/512/512" alt=""> -->
+                </div>
+                <div class="stage-content">
+                    <p class="stage-description"></p>
+                    <div class="stage-actions">
+                        <!-- <button>Action 1</button>
+                        <button>Action 2</button>
+                        <button>Action 3</button> -->
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+
+
+
+
+    </main>
+
+
+    <!-- javascript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

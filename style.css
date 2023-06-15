@@ -1,0 +1,168 @@
+/* ---- COLOR PALETTE ------
+darkblue: rgb(1,21,50);
+purple: rgb(76,2,53);
+yellow: rgb(233,244,91);
+lightblue: rgb(108,146,186);
+--------------------------- */
+
+
+/* CSS Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+.container {
+    max-width: 512px;
+    margin: 0 auto;
+}
+
+/* Generics */
+html {
+    color: white;
+    background-color: rgb(1, 21, 50);
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+    color: rgb(233, 244, 91);
+    background-color: rgb(76, 2, 53);
+    text-align: center;
+    padding: 32px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* GENRES */
+.genres {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    gap: 10px;
+}
+
+.genre {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(108, 146, 186);
+    cursor: pointer;
+}
+
+.genre:hover {
+    background-color: rgb(108, 146, 186);
+}
+
+
+/* GAME STARTED */
+.game-started h1 {
+    font-size: 16px;
+}
+
+.game-started header {
+    padding: 16px;
+}
+
+.game-started header p {
+    display: none;
+}
+
+/* LOADER */
+
+.loader {
+    height: 512px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* GAME OVER */
+
+.gameover {
+    padding: 32px;
+    text-align: center;
+}
+
+.gameover-icon {
+    font-size: 60px;
+}
+
+.gameover h2 {
+    margin-bottom: 30px;
+}
+
+.gameover-message{
+    margin-bottom: 30px;
+}
+
+button {
+    margin: 10px 0;
+    padding: 16px;
+    width: 150px;
+    font-size: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    border: 2px solid rgb(108, 146, 186);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: rgb(108, 146, 186);
+}
+
+
+
+/* STAGE */
+
+.stage-picture {
+    min-height: 300px;
+    background-image: url('./images/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.stage-picture img {
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.stage-content {
+    padding: 16px;
+    position: relative;
+    /* top: -50px; */
+    background-image: linear-gradient(to bottom, rgba(1, 21, 50, 0.8) 40%, rgb(1, 21, 50) 100%);
+}
+
+
+
+.stage-actions {
+    margin-top: 20px;
+}
+
+
+.stage-actions button {
+    width: 100%;
+    margin-top: 10px;
+}
