@@ -33,17 +33,23 @@ genreButtons.forEach(function (button) {
     // clicking the button genre 
     button.addEventListener('click', function () {
 
-        // recuperiamo il genere cliccato e lo salviamo nel genere selzionato/
-        selectedGenre = button.dataset.genre;
-
-        // nascondo i bottoni dei generi
-        genres.classList.add('hidden');
 
         if (API_KEY != '') {
+
+
+            // recuperiamo il genere cliccato e lo salviamo nel genere selzionato/
+            selectedGenre = button.dataset.genre;
+
+            // nascondo i bottoni dei generi
+            genres.classList.add('hidden');
+
             // start game
             startGame();
+
         } else {
-            alert('API KEY NOT DEFINED : YOU HAVE TO REGISTER A VALID API KEY TO USE THIS APP.');
+
+            alert('API KEY NOT DEFINED : \nYOU HAVE TO REGISTER A VALID API KEY TO USE THIS APP.');
+
         }
 
 
