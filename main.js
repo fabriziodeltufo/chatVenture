@@ -2,8 +2,6 @@
 
 const API_BASE_URL = 'https://api.openai.com/v1';
 const GPT_MODEL = 'gpt-3.5-turbo';
-const API_KEY = '';
-
 
 
 // collect main elements in the page.
@@ -48,7 +46,7 @@ genreButtons.forEach(function (button) {
 
         } else {
 
-            alert('API KEY NOT DEFINED : \nYOU HAVE TO REGISTER A VALID API KEY TO USE THIS APP.');
+            alert('API_KEY VARIABLE NOT DEFINED: \nYOU MUST REGISTER AN API KEY TO USE THIS WEB APP AND \nINSERT IT INTO A FILE NAMED config.js\n ie: const API_KEY = "value"; ');
 
         }
 
